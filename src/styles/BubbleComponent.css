@@ -1,0 +1,67 @@
+.bubble {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px; 
+  height: 250px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 60%, transparent 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  opacity: 0.8;
+  animation: shiny-move 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shiny-move {
+  0% {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15) 60%, transparent 100%);
+  }
+  50% {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05) 60%, transparent 100%);
+  }
+  100% {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15) 60%, transparent 100%);
+  }
+}
+
+
+@keyframes idleFloat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -55%) scale(1.05); 
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.bubble-active {
+  animation: moveBubble 10s linear infinite;
+}
+
+@keyframes moveBubble {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  25% {
+    top: 20%;
+    left: 80%;
+  }
+  50% {
+    top: 80%;
+    left: 80%;
+  }
+  75% {
+    top: 80%;
+    left: 20%;
+  }
+  100% {
+    top: 20%;
+    left: 20%;
+  }
+}

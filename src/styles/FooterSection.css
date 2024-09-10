@@ -1,0 +1,121 @@
+.footer-section {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  height: 100vh;
+  color: #000;
+  overflow: hidden;
+}
+
+.signup-section {
+  background-color: yellow;
+  padding: 100px 0px 0px 100px;
+  width: 60%;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.signup-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-left: 2rem;
+  color: #000000;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 4rem;
+  text-align: left;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.signup-section p {
+  padding-left: 2rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+
+.signup-section button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 40px;
+  margin-left: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+}
+
+.form-section {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 40%;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  position: relative;
+
+}
+.form-text h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-left: 2rem;
+  color: #000000;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 4rem;
+  text-align: left;
+  z-index: 1;
+  margin-top: 50px;
+}
+.form-text p{
+  padding-left: 2rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+.form-section input{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.submit{
+  background-color: #000000;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 90%;
+  
+}
+
+.footer-section.form-visible .signup-section {
+  transform: translateX(-100%);
+}
+
+.footer-section.form-visible .form-section {
+  display: block;
+  width: 80%;
+}
+
+.close-button {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}

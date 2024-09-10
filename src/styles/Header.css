@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #dfff00;
+  font-family: "Arial, sans-serif";
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer; /* Added cursor pointer to indicate clickable logo */
+  border: 2px solid #dfff00; /* Added yellow border around the logo */
+  padding: 10px; /* Added padding to create space between text and border */
+  border-radius: 50px; /* Added border-radius to make the border rounded */
+
+}
+
+
+.nav a {
+  color: #dfff00;
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 1.2rem;
+  font-weight: bold; /* Made the text bold */
+  transition: text-decoration 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
